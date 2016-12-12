@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="ChronoTELECOM.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChronoTELECOM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="cmd_chronometre" Content="Chronometre" HorizontalAlignment="Left" Margin="91,529,0,0" VerticalAlignment="Top" Width="210" Click="cmd_chronometre_Click"/>
+        <TextBox x:Name="txb_temps" HorizontalAlignment="Left" Margin="60,10,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Width="280" TextChanged="txb_temps_TextChanged" FontSize="50" TextAlignment="Center"/>
+        <Button x:Name="cmd_pause" Content="Pause" HorizontalAlignment="Left" Margin="70,471,0,0" VerticalAlignment="Top" Click="cmd_pause_Click"/>
+        <Button x:Name="cmd_reset" Content="Reset" HorizontalAlignment="Left" Margin="231,471,0,0" VerticalAlignment="Top" Click="cmd_reset_Click_1"/>
+        <TextBox x:Name="lati" HorizontalAlignment="Left" Margin="289,124,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBox x:Name="longitude" HorizontalAlignment="Left" Margin="289,188,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <Button x:Name="getLL" Content="Geolocalisation" HorizontalAlignment="Left" Margin="45,115,0,0" VerticalAlignment="Top" Click="getLL_Click"/>
+        <TextBlock x:Name="historique" HorizontalAlignment="Left" Margin="45,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="197" Width="313" FontSize="14"/>
+
+    </Grid>
+</Page>
